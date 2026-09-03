@@ -6,14 +6,6 @@ export const metadata: Metadata = {
     "Xinyi Chen studies human-AI collaboration, creativity support, visualization, multi-agent systems, and interactive narrative.",
 };
 
-const interests = [
-  "Human-AI Collaboration",
-  "Creativity Support",
-  "Visualization",
-  "Multi-Agent Systems",
-  "Interactive Narrative",
-];
-
 const publications = [
   {
     year: "2026",
@@ -106,18 +98,31 @@ export default function Home() {
       </nav>
 
       <section className="academicHero" id="top">
+        <aside className="academicAside">
+          <figure className="profilePhoto">
+            <img src="/profile.jpg" alt="Xinyi Chen holding a cat" />
+            <figcaption>Xinyi + a very serious research assistant</figcaption>
+          </figure>
+        </aside>
         <div className="academicIntro">
-          <p className="eyebrow">Human-AI Interaction · Creativity Support</p>
           <h1 className="artName" aria-label="Xinyi Chen">
             <span className="artFirst">Xinyi</span>
             <span className="artLast">Chen</span>
             <i aria-hidden="true">✦</i>
           </h1>
-          <p className="role">M.S. researcher at Zhejiang University</p>
-          <p className="bio">
-            I build and study interactive AI systems that help people create,
-            reflect, and collaborate. My research sits at the intersection of
-            human-computer interaction, generative AI, and design.
+          <p className="role">M.S. Researcher · Zhejiang University</p>
+          <p className="introText">
+            I am a master&apos;s student in Industrial Design Engineering at
+            Zhejiang University, advised by Prof. Chunlei Chai.
+          </p>
+          <p className="introText">
+            My research lies at the intersection of human-computer interaction,
+            generative AI, and design. I build and study interactive AI systems
+            that support people in creating, reflecting, and collaborating.
+          </p>
+          <p className="introText">
+            Previously, I was a research intern at the HCI Initiative, HKUST,
+            advised by Prof. Xiaojuan Ma.
           </p>
           <div className="academicLinks">
             <a href="mailto:cadrenaline@zju.edu.cn">Email</a>
@@ -125,16 +130,6 @@ export default function Home() {
             <a href="#publications">Publications</a>
           </div>
         </div>
-        <aside className="academicAside">
-          <figure className="profilePhoto">
-            <img src="/profile.jpg" alt="Xinyi Chen holding a cat" />
-            <figcaption>Xinyi + a very serious research assistant</figcaption>
-          </figure>
-          <div className="focusList">
-            <p>Research interests</p>
-            <ul>{interests.map((interest) => <li key={interest}>{interest}</li>)}</ul>
-          </div>
-        </aside>
       </section>
 
       <section className="academicSection" id="research">
