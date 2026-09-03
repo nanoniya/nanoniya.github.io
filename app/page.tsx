@@ -110,20 +110,26 @@ export default function Home() {
             <span className="artLast">Chen</span>
             <i aria-hidden="true">✦</i>
           </h1>
-          <p className="role">M.S. Researcher · Zhejiang University</p>
+          <p className="role">M.S. Student · Industrial Design Engineering · Zhejiang University</p>
           <p className="introText">
-            I am a master&apos;s student in Industrial Design Engineering at
-            Zhejiang University, advised by Prof. Chunlei Chai.
+            I am a master&apos;s student at Zhejiang University, advised by
+            Prof. Chunlei Chai. Previously, I was a research intern at the
+            HCI Initiative at HKUST, where I worked with Prof. Xiaojuan Ma.
           </p>
           <p className="introText">
-            My research lies at the intersection of human-computer interaction,
-            generative AI, and design. I build and study interactive AI systems
-            that support people in creating, reflecting, and collaborating.
+            My research explores how generative AI can become a thoughtful
+            creative partner rather than simply an automation tool. I design
+            and study interactive systems that help people develop ideas,
+            reflect on alternatives, and retain agency throughout creative work.
           </p>
           <p className="introText">
-            Previously, I was a research intern at the HCI Initiative, HKUST,
-            advised by Prof. Xiaojuan Ma.
+            My current interests span human-AI co-creation, LLM-based multi-agent
+            interaction, and computational design. Across creative writing,
+            video production, and cultural product design, I combine system
+            building with user studies to investigate more controllable,
+            reflective, and meaningful forms of human-AI collaboration.
           </p>
+          <p className="availability">I am interested in PhD opportunities in HCI and human-centered AI.</p>
           <div className="academicLinks">
             <a href="mailto:cadrenaline@zju.edu.cn">Email</a>
             <a href="/Xinyi_Chen_CV_20260326.pdf" download>CV</a>
