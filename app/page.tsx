@@ -8,7 +8,6 @@ export const metadata: Metadata = {
 
 const publications = [
   {
-    year: "2026",
     venue: "CHI '26",
     title: "DuoDrama: Supporting Screenplay Refinement Through LLM-Assisted Human Reflection",
     authors: "Yuying Tang, Xinyi Chen, Haotian Li, Xing Xie, Xiaojuan Ma, Huamin Qu",
@@ -17,7 +16,6 @@ const publications = [
     href: "https://doi.org/10.1145/3772318.3790568",
   },
   {
-    year: "2026",
     venue: "AEI",
     title: "LLM-enabled Generative Cultural Product Design with Symbolic Semantic Representation",
     authors: "Yang Yin, Xinyi Chen, Yingpin Chen, Yuchen Hong, Jinhe Li, Xiyuan Zhang, Chunlei Chai, Hao Fan",
@@ -26,7 +24,6 @@ const publications = [
     href: "https://doi.org/10.1016/j.aei.2025.103993",
   },
   {
-    year: "2025",
     venue: "ISCID '25",
     title: "Can a Chatbot Win Your Heart? The Impact of Diverse Role Settings in Anthropomorphic Chatbots on User Preferences",
     authors: "Xinyi Chen, Shiyin Ding, Shaobin Hou, Chunlei Chai",
@@ -35,7 +32,6 @@ const publications = [
     href: "https://doi.org/10.1109/ISCID68789.2025.00026",
   },
   {
-    year: "2023",
     venue: "ISCID '23",
     title: "DesignGPT: Multi-Agent Collaboration in Design",
     authors: "Shiying Ding, Xinyi Chen, Yan Fang, Wenrui Liu, Yiwu Qiu, Chunlei Chai",
@@ -184,7 +180,12 @@ export default function Home() {
               for reflective, steerable, and context-aware human-AI collaboration—especially where
               language models mediate creative reasoning, feedback, and coordination.
             </p>
-            <p className="availability">I am seeking PhD opportunities in HCI, Human-Centered NLP, and Human-Centered AI.</p>
+            <div className="aboutClosing">
+              <p className="availability">I am seeking PhD opportunities in HCI, Human-Centered NLP, and Human-Centered AI.</p>
+              <a className="aboutEmail" href="mailto:cadrenaline@zju.edu.cn">
+                <span>cadrenaline@zju.edu.cn</span><span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -215,7 +216,6 @@ export default function Home() {
           {publications.map((publication) => {
             return (
               <article className="publicationRow" key={publication.title}>
-                <div className="pubYear">{publication.year}</div>
                 <div className="pubBody">
                   <div className="publicationHeading">
                     <span className="venueBadge">{publication.venue}</span>
@@ -238,10 +238,9 @@ export default function Home() {
           <h2 className="sectionIndex">Research Experience</h2>
         </header>
         <div className="experienceList">
-          {researchExperience.map((item, index) => (
+          {researchExperience.map((item) => (
             <article className="experienceRow" key={item.place}>
-              <span className="timelineDot" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
-              <div className="expPeriod">{item.period}</div>
+              <time className="timelineDate">{item.period}</time>
               <div className="expContent">
                 <p className="expPlace">{item.place}</p>
                 <p className="expRole">{item.role}</p>
@@ -285,14 +284,6 @@ export default function Home() {
         </div>
       </section>
 
-      <footer>
-        <div>
-          <h2>Get in touch<span className="dot">.</span></h2>
-          <p>I am interested in PhD opportunities and research collaborations in HCI, Human-Centered NLP, and Human-Centered AI.</p>
-        </div>
-        <a className="footerEmail" href="mailto:cadrenaline@zju.edu.cn">cadrenaline@zju.edu.cn ↗</a>
-        <div className="footerBottom"><span>© 2026 Xinyi Chen</span><span>Hangzhou, China</span></div>
-      </footer>
     </main>
   );
 }
