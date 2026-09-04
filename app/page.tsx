@@ -180,12 +180,7 @@ export default function Home() {
               for reflective, steerable, and context-aware human-AI collaboration—especially where
               language models mediate creative reasoning, feedback, and coordination.
             </p>
-            <div className="aboutClosing">
-              <p className="availability">I am seeking PhD opportunities in HCI, Human-Centered NLP, and Human-Centered AI.</p>
-              <a className="aboutEmail" href="mailto:cadrenaline@zju.edu.cn">
-                <span>cadrenaline@zju.edu.cn</span><span aria-hidden="true">↗</span>
-              </a>
-            </div>
+            <p className="availability">I am seeking PhD opportunities in HCI, Human-Centered NLP, and Human-Centered AI.</p>
           </div>
         </div>
       </section>

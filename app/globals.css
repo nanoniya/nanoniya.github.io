@@ -75,15 +75,11 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .aboutBlock { max-width: 730px; margin-top: 28px; }
 .aboutBlock + .aboutBlock { margin-top: 25px; }
 .introText { margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.68; }
-.researchBlock { padding: 20px 22px; background: #fafbff; border-left: 2px solid var(--blue); }
+.researchBlock { padding: 22px 24px; background: var(--yellow); border: 1px solid var(--ink); box-shadow: 7px 7px 0 var(--blue); }
 .researchPoints { display: grid; gap: 11px; margin: 17px 0 0; padding-left: 18px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .researchPoints li::marker { color: var(--blue); }
 .researchPoints strong { color: var(--ink); }
 .availability { max-width: 690px; margin: 20px 0 0; color: var(--blue); font-size: 12px; font-weight: 700; }
-.aboutClosing { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 22px; }
-.aboutClosing .availability { margin: 0; }
-.aboutEmail { display: inline-flex; align-items: center; justify-content: center; gap: 10px; flex: 0 0 auto; padding: 11px 14px; background: var(--yellow); border: 1px solid var(--ink); box-shadow: 4px 4px 0 var(--blue); font-size: 11px; font-weight: 750; transition: color .18s ease, box-shadow .18s ease, transform .18s ease; }
-.aboutEmail:hover { color: var(--blue); box-shadow: 2px 2px 0 var(--blue); transform: translate(2px, 2px); }
 .affiliation { margin: 22px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .academicAside { padding-top: 4px; }
 .profilePhoto { position: relative; width: 210px; margin: 0; padding: 9px; background: white; border: 1px solid rgba(32,37,56,.55); box-shadow: 7px 7px 0 var(--yellow); transform: none; }
@@ -164,7 +160,6 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
   .profilePhoto { width: 170px; }
   .profileLinks { width: 170px; }
   .newsList, .publicationList, .experienceList, .backgroundGrid, .awards { margin-left: 0; }
-  .aboutClosing { align-items: flex-start; flex-direction: column; }
 }
 
 @media (max-width: 600px) {
