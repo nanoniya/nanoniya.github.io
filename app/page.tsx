@@ -118,13 +118,13 @@ export default function Home() {
         <aside className="academicAside">
           <figure className="profilePhoto">
             <img src="/profile.jpg" alt="Xinyi Chen holding a cat" />
-            <figcaption>Xinyi + a very serious research assistant</figcaption>
           </figure>
           <nav className="profileLinks" aria-label="Profile links">
-            <a href="https://scholar.google.com/scholar?q=%22Xinyi+Chen%22+%22DuoDrama%22" target="_blank" rel="noreferrer">Google Scholar</a>
-            <a href="mailto:cadrenaline@zju.edu.cn">Email</a>
-            <a href="/Xinyi_Chen_CV_20260904.pdf" download>CV</a>
-            <a href="#publications">Publications</a>
+            <a href="https://scholar.google.com/scholar?q=%22Xinyi+Chen%22+%22DuoDrama%22" target="_blank" rel="noreferrer"><span className="linkIcon" aria-hidden="true">G</span><span>Google Scholar</span></a>
+            <a href="mailto:cadrenaline@zju.edu.cn"><span className="linkIcon" aria-hidden="true">@</span><span>Email</span></a>
+            <a href="/Xinyi_Chen_CV_20260904.pdf" download><span className="linkIcon" aria-hidden="true">▤</span><span>Curriculum Vitae</span></a>
+            <a href="https://www.linkedin.com/search/results/people/?keywords=Xinyi%20Chen%20Zhejiang%20University%20Human-AI" target="_blank" rel="noreferrer"><span className="linkIcon linkedinIcon" aria-hidden="true">in</span><span>LinkedIn</span></a>
+            <a href="#publications"><span className="linkIcon" aria-hidden="true">≡</span><span>Publications</span></a>
           </nav>
         </aside>
         <div className="academicIntro">
@@ -133,6 +133,7 @@ export default function Home() {
             <span className="artLast">Chen</span>
             <i aria-hidden="true">✦</i>
           </h1>
+          <p className="role">M.S. Student in Industrial Design Engineering · Zhejiang University</p>
           <div className="aboutBlock">
             <p className="introText">
               I am a master&apos;s student at Zhejiang University, advised by Prof. Chunlei Chai.
