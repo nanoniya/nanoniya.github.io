@@ -82,7 +82,7 @@ const researchExperience = [
     tags: ["Human-centered NLP", "Creative writing", "LLM evaluation"],
   },
   {
-    period: "Feb–Sep 2025",
+    period: "Feb-Sep 2025",
     place: "HCI Initiative, HKUST",
     role: "Research Intern · advised by Prof. Xiaojuan Ma",
     title: "Co-creative scriptwriting through embodied role-play and reflection",
@@ -140,7 +140,7 @@ export default function Home() {
           </figure>
           <nav className="profileLinks" aria-label="Profile links">
             <a href="https://scholar.google.com/citations?user=5ORGHRIAAAAJ&hl=zh-CN&oi=sra" target="_blank" rel="noreferrer"><span className="linkIcon" aria-hidden="true">G</span><span>Google Scholar</span></a>
-            <a href="mailto:cadrenaline@zju.edu.cn"><span className="linkIcon" aria-hidden="true">@</span><span>Email</span></a>
+            <a href="mailto:ceterminateniya@gmail.com"><span className="linkIcon" aria-hidden="true">@</span><span>Email</span></a>
             <a href="https://www.linkedin.com/in/xinyi-chen-9521b73b5/?isSelfProfile=true" target="_blank" rel="noreferrer"><span className="linkIcon" aria-hidden="true">in</span><span>LinkedIn</span></a>
             <a href="/Xinyi_Chen_CV_20260904.pdf" download><span className="linkIcon" aria-hidden="true">▤</span><span>Curriculum Vitae</span></a>
           </nav>
@@ -255,8 +255,8 @@ export default function Home() {
         <div className="backgroundGrid">
           <div className="backgroundColumn">
             <h3>Education</h3>
-            <div className="detailItem"><span>2023–Present</span><strong>Zhejiang University</strong><p>M.S. Industrial Design Engineering · GPA 4.34 / 5.00</p></div>
-            <div className="detailItem"><span>2019–2023</span><strong>Northeastern University</strong><p>B.S. Digital Media Technology · Ranked 2 / 62</p></div>
+            <div className="detailItem"><span>2023–Present</span><strong>Zhejiang University</strong><p>M.S. Industrial Design Engineering</p></div>
+            <div className="detailItem"><span>2019–2023</span><strong>Northeastern University</strong><p>B.S. Digital Media Technology</p></div>
           </div>
           <div className="backgroundColumn">
             <h3>Industry</h3>
@@ -272,7 +272,7 @@ export default function Home() {
           </div>
         </div>
         <div className="awards">
-          <h3>Selected recognition</h3>
+          <h3>Awards(selected)</h3>
           <p><span>2024</span> Global Digital Intelligence Education Innovation Competition · Merit Award</p>
           <p><span>2022</span> International Mathematical Contest in Modeling · Third Prize</p>
           <p><span>2021</span> China National Scholarship</p>
