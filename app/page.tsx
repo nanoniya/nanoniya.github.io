@@ -46,13 +46,13 @@ const news = [
     date: "May 2026",
     before: "Joined the ",
     highlight: "Center for Metaverse and Computational Creativity",
-    after: " at HKUST as a research assistant, working with Prof. Pan Hui.",
+    after: " at HKUST as a Research Assistant, advising by Prof. Pan Hui.",
   },
   {
-    date: "Apr 2026",
-    before: "Our paper ",
-    highlight: "DuoDrama",
-    after: " on LLM-assisted reflection for screenplay refinement was published.",
+    date: "Jan 2026",
+    before: "Our project ",
+    highlight: "DuoDrama on LLM-assisted reflection for screenplay refinement",
+    after: " was accepted by CHI 2026.",
     href: "https://doi.org/10.1145/3772318.3790568",
   },
   {
@@ -66,7 +66,7 @@ const news = [
 
 const researchExperience = [
   {
-    period: "Jul 2026–Present",
+    period: "Jul 2026 - Present",
     place: "ARK Lab, HKUST",
     role: "Research Intern · advised by Prof. Xin Tong",
     title: "Cross-device multi-agent collaboration",
