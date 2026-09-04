@@ -19,7 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
   const origin = `${protocol}://${host}`;
   const title = "Xinyi Chen — Human-AI Interaction Researcher";
-  const description = "Research in human-AI collaboration, creativity support, multi-agent systems, and interactive narrative.";
+  const description = "Research in human-AI collaboration, Human-Centered NLP, multi-agent systems, and creativity support.";
 
   return {
     title,

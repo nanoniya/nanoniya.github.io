@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Xinyi Chen — Human-AI Interaction Researcher",
   description:
-    "Xinyi Chen studies human-AI collaboration, creativity support, visualization, multi-agent systems, and interactive narrative.",
+    "Xinyi Chen studies human-AI collaboration, human-centered NLP, multi-agent systems, and creativity support.",
 };
 
 const publications = [
@@ -12,9 +12,9 @@ const publications = [
     venue: "CHI ’26",
     title: "DuoDrama: Supporting Screenplay Refinement Through LLM-Assisted Human Reflection",
     authors: "Yuying Tang, Xinyi Chen, Haotian Li, Xing Xie, Xiaojuan Ma, Huamin Qu",
-    note: "Accepted",
+    note: "CHI 2026",
     keywords: ["Human-AI Co-Creation", "LLM Agents", "Interactive Narrative"],
-    href: "https://arxiv.org/abs/2602.05854",
+    href: "https://doi.org/10.1145/3772318.3790568",
   },
   {
     year: "2026",
@@ -30,8 +30,9 @@ const publications = [
     venue: "ISCID ’25",
     title: "Can a Chatbot Win Your Heart? The Impact of Diverse Role Settings in Anthropomorphic Chatbots on User Preferences",
     authors: "Xinyi Chen, Shiyin Ding, Shaobin Hou, Chunlei Chai",
-    note: "Accepted",
+    note: "pp. 85–88",
     keywords: ["Conversational AI", "Anthropomorphism", "User Preference"],
+    href: "https://doi.org/10.1109/ISCID68789.2025.00026",
   },
   {
     year: "2023",
@@ -45,6 +46,22 @@ const publications = [
 ];
 
 const researchExperience = [
+  {
+    period: "Jul 2026–Present",
+    place: "ARK Lab, HKUST",
+    role: "Research Intern · advised by Prof. Xin Tong",
+    title: "Cross-device multi-agent collaboration",
+    body: "Investigating how agents on heterogeneous devices can share task context, coordinate complementary capabilities, and maintain continuity across device transitions while preserving user control.",
+    tags: ["Multi-agent systems", "Cross-device", "User control"],
+  },
+  {
+    period: "May 2026–Present",
+    place: "MC2, HKUST",
+    role: "Research Assistant · advised by Prof. Pan Hui",
+    title: "Complementary LLM feedback selection for creative writing",
+    body: "Built a pipeline that selects a compact set of complementary reviewers under a fixed attention budget using observed feedback behavior rather than persona labels; evaluated alternative mechanisms and refined the method based on negative results.",
+    tags: ["Human-centered NLP", "Creative writing", "LLM evaluation"],
+  },
   {
     period: "Feb–Sep 2025",
     place: "HCI Initiative, HKUST",
@@ -93,7 +110,7 @@ export default function Home() {
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#experience">Experience</a>
-          <a href="/Xinyi_Chen_CV_20260326.pdf" download>CV ↗</a>
+          <a href="/Xinyi_Chen_CV_20260904.pdf" download>CV ↗</a>
         </div>
       </nav>
 
@@ -103,6 +120,12 @@ export default function Home() {
             <img src="/profile.jpg" alt="Xinyi Chen holding a cat" />
             <figcaption>Xinyi + a very serious research assistant</figcaption>
           </figure>
+          <nav className="profileLinks" aria-label="Profile links">
+            <a href="https://scholar.google.com/scholar?q=%22Xinyi+Chen%22+%22DuoDrama%22" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a href="mailto:cadrenaline@zju.edu.cn">Email</a>
+            <a href="/Xinyi_Chen_CV_20260904.pdf" download>CV</a>
+            <a href="#publications">Publications</a>
+          </nav>
         </aside>
         <div className="academicIntro">
           <h1 className="artName" aria-label="Xinyi Chen">
@@ -110,30 +133,35 @@ export default function Home() {
             <span className="artLast">Chen</span>
             <i aria-hidden="true">✦</i>
           </h1>
-          <p className="role">M.S. Student · Industrial Design Engineering · Zhejiang University</p>
-          <p className="introText">
-            I am a master&apos;s student at Zhejiang University, advised by
-            Prof. Chunlei Chai. Previously, I was a research intern at the
-            HCI Initiative at HKUST, where I worked with Prof. Xiaojuan Ma.
-          </p>
-          <p className="introText">
-            My research explores how generative AI can become a thoughtful
-            creative partner rather than simply an automation tool. I design
-            and study interactive systems that help people develop ideas,
-            reflect on alternatives, and retain agency throughout creative work.
-          </p>
-          <p className="introText">
-            My current interests span human-AI co-creation, LLM-based multi-agent
-            interaction, and computational design. Across creative writing,
-            video production, and cultural product design, I combine system
-            building with user studies to investigate more controllable,
-            reflective, and meaningful forms of human-AI collaboration.
-          </p>
-          <p className="availability">I am interested in PhD opportunities in HCI and human-centered AI.</p>
-          <div className="academicLinks">
-            <a href="mailto:cadrenaline@zju.edu.cn">Email</a>
-            <a href="/Xinyi_Chen_CV_20260326.pdf" download>CV</a>
-            <a href="#publications">Publications</a>
+          <div className="aboutBlock">
+            <p className="introText">
+              I am a master&apos;s student at Zhejiang University, advised by Prof. Chunlei Chai.
+              I am currently a research intern at the AI &amp; Art for Knowledge &amp; Creativity
+              (ARK) Lab and a research assistant at the Center for Metaverse and Computational
+              Creativity (MC2) at HKUST, working with Prof. Xin Tong and Prof. Pan Hui.
+              Previously, I worked with Prof. Xiaojuan Ma at the HCI Initiative, HKUST.
+            </p>
+          </div>
+          <div className="aboutBlock researchBlock">
+            <p className="introText">
+              My research asks how generative and agentic AI systems can coordinate diverse
+              perspectives and capabilities while keeping people meaningfully involved in
+              reasoning and creative decisions. I approach this question through three connected directions:
+            </p>
+            <ul className="researchPoints">
+              <li><strong>Reflective human-AI co-creation.</strong> I design role-based and experience-grounded interactions that help people examine alternatives instead of simply accepting AI output, as explored in DuoDrama for screenplay refinement.</li>
+              <li><strong>Agent coordination and feedback selection.</strong> My current work investigates complementary LLM reviewers under limited human attention and multi-agent collaboration across heterogeneous devices.</li>
+              <li><strong>Human-centered generative design.</strong> I explore semantic representations, multimodal workflows, and parametric systems that make AI-supported creative processes more controllable and aligned with human intent.</li>
+            </ul>
+          </div>
+          <div className="aboutBlock futureBlock">
+            <p className="introText">
+              Across these projects, I combine interactive system building, agent workflow design,
+              and empirical user studies. Looking forward, I aim to develop principles and systems
+              for reflective, steerable, and context-aware human-AI collaboration—especially where
+              language models mediate creative reasoning, feedback, and coordination.
+            </p>
+            <p className="availability">I am seeking PhD opportunities in HCI, Human-Centered NLP, and Human-Centered AI.</p>
           </div>
         </div>
       </section>
@@ -261,7 +289,7 @@ export default function Home() {
       <footer>
         <div>
           <h2>Get in touch<span className="dot">.</span></h2>
-          <p>I am interested in PhD opportunities and research collaborations in Human-AI Interaction.</p>
+          <p>I am interested in PhD opportunities and research collaborations in HCI, Human-Centered NLP, and Human-Centered AI.</p>
         </div>
         <a className="footerEmail" href="mailto:cadrenaline@zju.edu.cn">cadrenaline@zju.edu.cn ↗</a>
         <div className="footerBottom"><span>© 2026 Xinyi Chen</span><span>Hangzhou, China</span></div>
