@@ -12,16 +12,16 @@ const publications = [
     venue: "CHI ’26",
     title: "DuoDrama: Supporting Screenplay Refinement Through LLM-Assisted Human Reflection",
     authors: "Yuying Tang, Xinyi Chen, Haotian Li, Xing Xie, Xiaojuan Ma, Huamin Qu",
-    note: "CHI 2026",
+    citation: "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems, Barcelona, Spain, April 2026.",
     keywords: ["Human-AI Co-Creation", "LLM Agents", "Interactive Narrative"],
     href: "https://doi.org/10.1145/3772318.3790568",
   },
   {
     year: "2026",
-    venue: "Advanced Engineering Informatics",
+    venue: "AEI",
     title: "LLM-enabled Generative Cultural Product Design with Symbolic Semantic Representation",
     authors: "Yang Yin, Xinyi Chen, Yingpin Chen, Yuchen Hong, Jinhe Li, Xiyuan Zhang, Chunlei Chai, Hao Fan",
-    note: "JCR Q1 · IF 9.9",
+    citation: "Advanced Engineering Informatics, vol. 69, part C, article 103993, January 2026.",
     keywords: ["Generative Design", "Cultural Computing", "Semantic Representation"],
     href: "https://doi.org/10.1016/j.aei.2025.103993",
   },
@@ -30,7 +30,7 @@ const publications = [
     venue: "ISCID ’25",
     title: "Can a Chatbot Win Your Heart? The Impact of Diverse Role Settings in Anthropomorphic Chatbots on User Preferences",
     authors: "Xinyi Chen, Shiyin Ding, Shaobin Hou, Chunlei Chai",
-    note: "pp. 85–88",
+    citation: "2025 18th International Symposium on Computational Intelligence and Design (ISCID), pp. 85–88, 2025.",
     keywords: ["Conversational AI", "Anthropomorphism", "User Preference"],
     href: "https://doi.org/10.1109/ISCID68789.2025.00026",
   },
@@ -39,7 +39,7 @@ const publications = [
     venue: "ISCID ’23",
     title: "DesignGPT: Multi-Agent Collaboration in Design",
     authors: "Shiying Ding, Xinyi Chen, Yan Fang, Wenrui Liu, Yiwu Qiu, Chunlei Chai",
-    note: "pp. 204–208",
+    citation: "2023 16th International Symposium on Computational Intelligence and Design (ISCID), pp. 204–208, 2023.",
     keywords: ["Multi-Agent Systems", "Design Collaboration", "LLMs"],
     href: "https://doi.org/10.1109/ISCID59865.2023.00056",
   },
@@ -47,21 +47,23 @@ const publications = [
 
 const news = [
   {
-    date: "Jul 2026",
-    text: "Joined the AI & Art for Knowledge & Creativity (ARK) Lab at HKUST as a research intern, working with Prof. Xin Tong on cross-device multi-agent collaboration.",
-  },
-  {
     date: "May 2026",
-    text: "Joined the Center for Metaverse and Computational Creativity (MC2) at HKUST as a research assistant, working with Prof. Pan Hui on complementary LLM feedback for creative writing.",
+    before: "Joined the ",
+    highlight: "Center for Metaverse and Computational Creativity (MC2)",
+    after: " at HKUST as a research assistant, working with Prof. Pan Hui.",
   },
   {
     date: "Apr 2026",
-    text: "DuoDrama was published at CHI 2026.",
+    before: "Our paper ",
+    highlight: "DuoDrama",
+    after: " on LLM-assisted reflection for screenplay refinement was published.",
     href: "https://doi.org/10.1145/3772318.3790568",
   },
   {
     date: "Jan 2026",
-    text: "Our work on LLM-enabled generative cultural product design was published in Advanced Engineering Informatics.",
+    before: "Our work on ",
+    highlight: "LLM-enabled generative cultural product design",
+    after: " was published in Advanced Engineering Informatics.",
     href: "https://doi.org/10.1016/j.aei.2025.103993",
   },
 ];
@@ -126,16 +128,16 @@ export default function Home() {
   return (
     <main>
       <nav className="nav" aria-label="Main navigation">
-        <a className="wordmark" href="#top">Xinyi Chen</a>
+        <a className="wordmark" href="#about">Xinyi Chen</a>
         <div className="navLinks">
+          <a href="#about">About</a>
           <a href="#news">News</a>
           <a href="#publications">Publications</a>
           <a href="#experience">Experience</a>
-          <a href="/Xinyi_Chen_CV_20260904.pdf" download>Curriculum Vitae</a>
         </div>
       </nav>
 
-      <section className="academicHero" id="top">
+      <section className="academicHero" id="about">
         <aside className="academicAside">
           <figure className="profilePhoto">
             <img src="/profile.jpg" alt="Xinyi Chen holding a cat" />
@@ -143,9 +145,8 @@ export default function Home() {
           <nav className="profileLinks" aria-label="Profile links">
             <a href="https://scholar.google.com/citations?user=5ORGHRIAAAAJ&hl=zh-CN&oi=sra" target="_blank" rel="noreferrer"><span className="linkIcon" aria-hidden="true">G</span><span>Google Scholar</span></a>
             <a href="mailto:cadrenaline@zju.edu.cn"><span className="linkIcon" aria-hidden="true">@</span><span>Email</span></a>
-            <a href="/Xinyi_Chen_CV_20260904.pdf" download><span className="linkIcon" aria-hidden="true">▤</span><span>Curriculum Vitae</span></a>
             <a href="https://www.linkedin.com/in/xinyi-chen-9521b73b5/?isSelfProfile=true" target="_blank" rel="noreferrer"><span className="linkIcon" aria-hidden="true">in</span><span>LinkedIn</span></a>
-            <a href="#publications"><span className="linkIcon" aria-hidden="true">≡</span><span>Publications</span></a>
+            <a href="/Xinyi_Chen_CV_20260904.pdf" download><span className="linkIcon" aria-hidden="true">▤</span><span>Curriculum Vitae</span></a>
           </nav>
         </aside>
         <div className="academicIntro">
@@ -194,9 +195,13 @@ export default function Home() {
         </header>
         <div className="newsList">
           {news.map((item) => (
-            <article className="newsRow" key={`${item.date}-${item.text}`}>
+            <article className="newsRow" key={`${item.date}-${item.highlight}`}>
               <time>{item.date}</time>
-              <p>{item.href ? <a href={item.href} target="_blank" rel="noreferrer">{item.text}</a> : item.text}</p>
+              <p>
+                {item.before}
+                {item.href ? <a href={item.href} target="_blank" rel="noreferrer">{item.highlight}</a> : <span className="newsHighlight">{item.highlight}</span>}
+                {item.after}
+              </p>
             </article>
           ))}
         </div>
@@ -208,24 +213,21 @@ export default function Home() {
         </header>
         <div className="publicationList">
           {publications.map((publication) => {
-            const publicationBody = (
-              <>
+            return (
+              <article className="publicationRow" key={publication.title}>
                 <div className="pubYear">{publication.year}</div>
                 <div className="pubBody">
-                  <p className="paperMeta">{publication.venue} · {publication.note}</p>
-                  <h3>{publication.title}</h3>
-                  <p>{highlightAuthor(publication.authors)}</p>
+                  <div className="publicationHeading">
+                    <span className="venueBadge">{publication.venue}</span>
+                    <h3><a href={publication.href} target="_blank" rel="noreferrer">{publication.title}</a></h3>
+                  </div>
+                  <p className="pubAuthors">{highlightAuthor(publication.authors)}</p>
+                  <p className="pubCitation">{publication.citation}</p>
                   <div className="keywordList" aria-label="Publication keywords">
                     {publication.keywords.map((keyword) => <span key={keyword}>{keyword}</span>)}
                   </div>
                 </div>
-                <div className="pubLink">{publication.href ? "↗" : ""}</div>
-              </>
-            );
-            return publication.href ? (
-              <a className="publicationRow" href={publication.href} target="_blank" rel="noreferrer" key={publication.title}>{publicationBody}</a>
-            ) : (
-              <div className="publicationRow" key={publication.title}>{publicationBody}</div>
+              </article>
             );
           })}
         </div>
@@ -252,7 +254,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="academicSection backgroundSection" id="about">
+      <section className="academicSection backgroundSection" id="background">
         <header className="sectionHeader compactHeader">
           <h2 className="sectionIndex">Background</h2>
         </header>
