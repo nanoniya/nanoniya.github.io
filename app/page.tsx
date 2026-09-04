@@ -45,6 +45,27 @@ const publications = [
   },
 ];
 
+const news = [
+  {
+    date: "Jul 2026",
+    text: "Joined the AI & Art for Knowledge & Creativity (ARK) Lab at HKUST as a research intern, working with Prof. Xin Tong on cross-device multi-agent collaboration.",
+  },
+  {
+    date: "May 2026",
+    text: "Joined the Center for Metaverse and Computational Creativity (MC2) at HKUST as a research assistant, working with Prof. Pan Hui on complementary LLM feedback for creative writing.",
+  },
+  {
+    date: "Apr 2026",
+    text: "DuoDrama was published at CHI 2026.",
+    href: "https://doi.org/10.1145/3772318.3790568",
+  },
+  {
+    date: "Jan 2026",
+    text: "Our work on LLM-enabled generative cultural product design was published in Advanced Engineering Informatics.",
+    href: "https://doi.org/10.1016/j.aei.2025.103993",
+  },
+];
+
 const researchExperience = [
   {
     period: "Jul 2026–Present",
@@ -107,10 +128,10 @@ export default function Home() {
       <nav className="nav" aria-label="Main navigation">
         <a className="wordmark" href="#top">Xinyi Chen</a>
         <div className="navLinks">
-          <a href="#research">Research</a>
+          <a href="#news">News</a>
           <a href="#publications">Publications</a>
           <a href="#experience">Experience</a>
-          <a href="/Xinyi_Chen_CV_20260904.pdf" download>CV ↗</a>
+          <a href="/Xinyi_Chen_CV_20260904.pdf" download>Curriculum Vitae</a>
         </div>
       </nav>
 
@@ -120,10 +141,10 @@ export default function Home() {
             <img src="/profile.jpg" alt="Xinyi Chen holding a cat" />
           </figure>
           <nav className="profileLinks" aria-label="Profile links">
-            <a href="https://scholar.google.com/scholar?q=%22Xinyi+Chen%22+%22DuoDrama%22" target="_blank" rel="noreferrer"><span className="linkIcon" aria-hidden="true">G</span><span>Google Scholar</span></a>
+            <a href="https://scholar.google.com/citations?user=5ORGHRIAAAAJ&hl=zh-CN&oi=sra" target="_blank" rel="noreferrer"><span className="linkIcon" aria-hidden="true">G</span><span>Google Scholar</span></a>
             <a href="mailto:cadrenaline@zju.edu.cn"><span className="linkIcon" aria-hidden="true">@</span><span>Email</span></a>
             <a href="/Xinyi_Chen_CV_20260904.pdf" download><span className="linkIcon" aria-hidden="true">▤</span><span>Curriculum Vitae</span></a>
-            <a href="https://www.linkedin.com/search/results/people/?keywords=Xinyi%20Chen%20Zhejiang%20University%20Human-AI" target="_blank" rel="noreferrer"><span className="linkIcon linkedinIcon" aria-hidden="true">in</span><span>LinkedIn</span></a>
+            <a href="https://www.linkedin.com/in/xinyi-chen-9521b73b5/?isSelfProfile=true" target="_blank" rel="noreferrer"><span className="linkIcon" aria-hidden="true">in</span><span>LinkedIn</span></a>
             <a href="#publications"><span className="linkIcon" aria-hidden="true">≡</span><span>Publications</span></a>
           </nav>
         </aside>
@@ -167,45 +188,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="academicSection" id="research">
+      <section className="academicSection" id="news">
         <header className="sectionHeader">
-          <p className="sectionIndex">Research Interests</p>
-          <h2>Research Interests</h2>
-          <p>
-            Three connected directions guide how I design systems, frame
-            questions, and evaluate human-AI interaction.
-          </p>
+          <h2 className="sectionIndex">News</h2>
         </header>
-        <div className="themeGrid">
-          <article className="themeCard themeBlue">
-            <div className="themeIcon" aria-hidden="true"><span>H</span><i>↔</i><span>AI</span></div>
-            <p className="themeNumber">01</p>
-            <h3>Human-AI Co-Creation</h3>
-            <p>How can AI participate in creative work while preserving human reflection, authorship, and agency?</p>
-            <small>Creative writing · Video production · Design support</small>
-          </article>
-          <article className="themeCard themeYellow">
-            <div className="themeIcon agentIcon" aria-hidden="true"><span>A₁</span><span>A₂</span><span>A₃</span></div>
-            <p className="themeNumber">02</p>
-            <h3>Multi-Agent Interactive Systems</h3>
-            <p>How should specialized agents coordinate with one another—and with people—in complex creative processes?</p>
-            <small>LLM agents · Role-play · Mixed initiative</small>
-          </article>
-          <article className="themeCard themeCoral">
-            <div className="themeIcon designIcon" aria-hidden="true"><span>意</span><i>→</i><span>形</span></div>
-            <p className="themeNumber">03</p>
-            <h3>Computational Design</h3>
-            <p>How can semantic representations, parameters, and visual systems make generative design more controllable?</p>
-            <small>Generative design · Visualization · Parametric modeling</small>
-          </article>
+        <div className="newsList">
+          {news.map((item) => (
+            <article className="newsRow" key={`${item.date}-${item.text}`}>
+              <time>{item.date}</time>
+              <p>{item.href ? <a href={item.href} target="_blank" rel="noreferrer">{item.text}</a> : item.text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
       <section className="academicSection" id="publications">
         <header className="sectionHeader compactHeader">
-          <p className="sectionIndex">02 / Publications</p>
-          <h2>Publications</h2>
-          <p>* denotes equal contribution.</p>
+          <h2 className="sectionIndex">Publications</h2>
         </header>
         <div className="publicationList">
           {publications.map((publication) => {
@@ -234,9 +233,7 @@ export default function Home() {
 
       <section className="academicSection" id="experience">
         <header className="sectionHeader compactHeader subtleHeader">
-          <p className="sectionIndex">03 / Experience</p>
-          <h2>Research experience</h2>
-          <p>Labs, collaborations, and research systems from 2022 to the present.</p>
+          <h2 className="sectionIndex">Research Experience</h2>
         </header>
         <div className="experienceList">
           {researchExperience.map((item, index) => (
@@ -257,8 +254,7 @@ export default function Home() {
 
       <section className="academicSection backgroundSection" id="about">
         <header className="sectionHeader compactHeader">
-          <p className="sectionIndex">04 / Background</p>
-          <h2>Background</h2>
+          <h2 className="sectionIndex">Background</h2>
         </header>
         <div className="backgroundGrid">
           <div className="backgroundColumn">
