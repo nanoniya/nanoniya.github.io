@@ -49,9 +49,12 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
   gap: 64px;
   align-items: start;
   width: min(1080px, calc(100% - 48px));
-  margin: 0 auto;
-  padding: 72px 0 76px;
-  border-bottom: 1px solid var(--line);
+  margin: 36px auto 0;
+  padding: 48px 40px 56px;
+  background: white;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 18px 52px rgba(32, 37, 56, .11);
 }
 .eyebrow, .sectionIndex {
   font-family: var(--font-geist-mono), monospace;
@@ -82,8 +85,8 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .availability { max-width: 690px; margin: 20px 0 0; color: var(--blue); font-size: 12px; font-weight: 700; }
 .affiliation { margin: 22px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .academicAside { padding-top: 4px; }
-.profilePhoto { position: relative; width: 210px; margin: 0; padding: 9px; background: white; border: 1px solid rgba(32,37,56,.55); box-shadow: 7px 7px 0 var(--yellow); transform: none; }
-.profilePhoto img { display: block; width: 100%; aspect-ratio: 1 / 1.08; object-fit: cover; object-position: center 34%; filter: saturate(.9) contrast(1.03); }
+.profilePhoto { position: relative; width: 210px; margin: 0; padding: 9px; background: white; border: 1px solid rgba(32,37,56,.55); border-radius: 16px; box-shadow: 7px 7px 0 var(--yellow); transform: none; }
+.profilePhoto img { display: block; width: 100%; aspect-ratio: 1 / 1.08; object-fit: cover; object-position: center 34%; border-radius: 10px; filter: saturate(.9) contrast(1.03); }
 .profileLinks { display: flex; flex-direction: column; gap: 4px; width: 210px; margin-top: 24px; }
 .profileLinks a { display: flex; align-items: center; gap: 10px; width: 100%; padding: 7px 2px; font-size: 11px; font-weight: 700; }
 .profileLinks a:hover { color: var(--blue); }
@@ -107,7 +110,7 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .newsRow a, .newsHighlight { color: var(--blue); font-weight: 650; }
 .newsRow a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-.publicationList { margin-left: 185px; border-top: 1px solid var(--ink); }
+.publicationList { margin-left: 185px; }
 .publicationRow { padding: 28px 14px; border-bottom: 1px solid var(--line); transition: background-color .18s ease, transform .18s ease; }
 .publicationRow:hover { background: #fafbff; transform: translateY(-1px); }
 .publicationHeading { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 14px; align-items: start; }
@@ -156,7 +159,7 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .awards p span { color: var(--coral); font-family: var(--font-geist-mono), monospace; font-size: 9px; }
 
 @media (max-width: 820px) {
-  .academicHero { grid-template-columns: 180px minmax(0, 1fr); gap: 38px; padding: 62px 0 68px; }
+  .academicHero { grid-template-columns: 180px minmax(0, 1fr); gap: 38px; padding: 42px 30px 48px; }
   .profilePhoto { width: 170px; }
   .profileLinks { width: 170px; }
   .newsList, .publicationList, .experienceList, .backgroundGrid, .awards { margin-left: 0; }
@@ -165,7 +168,7 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 @media (max-width: 600px) {
   .nav, .academicHero, .academicSection { width: min(100% - 34px, 1080px); }
   .navLinks a:not(:last-child) { display: none; }
-  .academicHero { grid-template-columns: 1fr; gap: 34px; padding: 48px 0 56px; }
+  .academicHero { grid-template-columns: 1fr; gap: 34px; margin-top: 18px; padding: 34px 22px 40px; border-radius: 16px; }
   .academicIntro { grid-row: 1; }
   .academicAside { grid-row: 2; }
   .profilePhoto { width: 145px; }
