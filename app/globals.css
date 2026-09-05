@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #002147;
-  --muted: #52606f;
-  --paper: #fff8e7;
-  --soft-blue: #dce5ff;
-  --blue: #4169e1;
-  --coral: #fb5607;
+  --ink: #1f2937;
+  --oxford: #002147;
+  --muted: #667085;
+  --paper: #f8fafc;
+  --soft-blue: #e7efff;
+  --blue: #1d42a6;
+  --coral: #4169e1;
   --yellow: #dce5ff;
   --cyan: #b9d6f2;
-  --line: #d8dde5;
+  --line: #dce3ec;
 }
 
 * { box-sizing: border-box; }
@@ -37,11 +38,11 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
   width: min(1080px, calc(100% - 48px));
   margin: 0 auto;
   padding: 21px 0;
-  background: rgba(255, 248, 231, .94);
+  background: rgba(248, 250, 252, .94);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(12px);
 }
-.wordmark { font-size: 17px; font-weight: 750; letter-spacing: -.01em; }
+.wordmark { color: var(--oxford); font-size: 17px; font-weight: 750; letter-spacing: -.01em; }
 .navLinks { display: flex; gap: 28px; font-size: 12px; font-weight: 650; }
 .navLinks a { padding: 3px 0; }
 .navLinks a:hover { color: var(--blue); }
@@ -58,7 +59,7 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
   background: white;
   border: 0;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 33, 71, .12);
+  box-shadow: 0 10px 30px rgba(0, 33, 71, .1);
 }
 .eyebrow, .sectionIndex {
   font-family: inherit;
@@ -74,7 +75,7 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
   letter-spacing: -.055em;
 }
 .artName { position: relative; isolation: isolate; display: flex; align-items: baseline; width: fit-content; gap: .16em; }
-.artFirst { font-family: Baskerville, "Palatino Linotype", "Book Antiqua", Georgia, serif; font-style: normal; font-weight: 600; letter-spacing: -.025em; }
+.artFirst { color: var(--oxford); font-family: Baskerville, "Palatino Linotype", "Book Antiqua", Georgia, serif; font-style: normal; font-weight: 600; letter-spacing: -.025em; }
 .artLast { position: relative; z-index: 0; color: var(--blue); font-family: var(--font-inter), Inter, sans-serif; font-weight: 760; letter-spacing: -.025em; }
 .artLast::after { content: ""; position: absolute; left: 2%; right: -3%; bottom: -7px; height: 8px; background: var(--yellow); border-radius: 50%; transform: rotate(-1.5deg); z-index: -1; }
 .artName i { position: absolute; right: -24px; top: -10px; color: var(--coral); font-size: 15px; font-style: normal; animation: nameSpark 6s linear infinite; }
