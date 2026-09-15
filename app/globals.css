@@ -85,8 +85,9 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .academicIntro { min-width: 0; }
 .aboutBlock { width: 100%; max-width: 100%; margin-top: 28px; }
 .aboutBlock + .aboutBlock { margin-top: 22px; }
-.introText { margin: 0; font-size: 15px; line-height: 1.68; text-align: left; text-wrap: pretty; }
-.researchBlock { display: grid; gap: 18px; padding: 0; background: transparent; border: 0; border-radius: 0; box-shadow: none; }
+.introText { margin: 0; font-size: 15px; line-height: 1.68; text-align: justify; text-align-last: left; text-wrap: pretty; hyphens: auto; }
+.researchBlock { position: relative; isolation: isolate; display: grid; gap: 18px; padding: 24px 0; background: transparent; }
+.researchBlock::before { content: ""; position: absolute; inset: 0 -24px; z-index: -1; background: var(--yellow); border: 0; border-radius: 10px; box-shadow: 8px 8px 0 var(--blue); }
 .availability { max-width: 690px; margin: 38px 0 0; color: var(--blue); font-size: 12px; font-weight: 700; }
 .affiliation { margin: 22px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .academicAside { padding-top: 4px; }
@@ -174,6 +175,8 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
   .nav, .academicHero, .academicSection { width: min(100% - 34px, 1080px); }
   .navLinks a:not(:last-child) { display: none; }
   .academicHero { grid-template-columns: 1fr; gap: 34px; margin-top: 18px; padding: 34px 22px 40px; border-radius: 16px; }
+  .introText { text-align: left; hyphens: none; }
+  .researchBlock::before { inset-inline: -22px; border-radius: 0; }
   .academicIntro { grid-row: 1; }
   .academicAside { grid-row: 2; }
   .profilePhoto { width: 145px; }

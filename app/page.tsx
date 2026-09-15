@@ -155,15 +155,13 @@ export default function Home() {
             <i aria-hidden="true">✦</i>
           </h1>
           <p className="role">M.S. Student in Industrial Design Engineering · Zhejiang University</p>
-          <div className="aboutBlock">
+          <div className="aboutBlock researchBlock">
             <p className="introText">
               I am a master&apos;s student at Zhejiang University, advised by Prof. Chunlei Chai.
               I am currently a research intern at the Center for Metaverse and Computational
               Creativity at HKUST (GZ), working with Prof. Pan Hui.
               Previously, I worked with Prof. Xiaojuan Ma at the HCI Initiative, HKUST.
             </p>
-          </div>
-          <div className="aboutBlock researchBlock">
             <p className="introText">
               My research interests center on AI-supported creative thinking, particularly how
               interactive systems can help people develop ideas through feedback, reflection,
