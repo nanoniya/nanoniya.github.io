@@ -109,7 +109,7 @@ export default function Home() {
     <main>
       <nav className="nav" aria-label="Main navigation">
         <a className="wordmark" href="#about">
-          <img className="catMark" src="./favicon.svg" alt="" aria-hidden="true" />
+          <img className="catMark" src="./paw.png" alt="" aria-hidden="true" />
           <span>Xinyi Chen</span>
         </a>
         <div className="navLinks">
@@ -264,6 +264,10 @@ export default function Home() {
           <p><span>2021</span> China National Scholarship</p>
         </div>
       </section>
+
+      <footer className="assetCredit">
+        Paw icon by <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer">Freepik</a> — <a href="https://www.flaticon.com/free-icon/paw_8347745" target="_blank" rel="noreferrer">Flaticon</a>
+      </footer>
 
     </main>
   );

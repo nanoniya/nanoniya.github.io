@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title,
   description,
   icons: {
-    icon: "/favicon.svg",
+    icon: "/paw.png",
   },
   openGraph: {
     title,
