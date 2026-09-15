@@ -83,7 +83,7 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .artName i { position: absolute; right: -24px; top: -10px; color: var(--coral); font-size: 15px; font-style: normal; animation: nameSpark 6s linear infinite; }
 .role { margin: 13px 0 0; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .01em; }
 .academicIntro { min-width: 0; }
-.aboutBlock { width: 95%; max-width: 95%; margin-top: 28px; }
+.aboutBlock { width: 95%; max-width: 95%; margin-top: 28px; margin-left: 10px; }
 .aboutBlock + .aboutBlock { margin-top: 22px; }
 .introText {
   margin: 0;

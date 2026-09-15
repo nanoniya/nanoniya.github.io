@@ -17,7 +17,7 @@ const publications = [
   },
   {
     venue: "AEI",
-    title: "LLM-enabled Generative Cultural Product Design with Symbolic Semantic Representation",
+    title: "LLM-Enabled Generative Cultural Product Design with Symbolic Semantic Representation",
     authors: "Yang Yin, Xinyi Chen, Yingpin Chen, Yuchen Hong, Jinhe Li, Xiyuan Zhang, Chunlei Chai, Hao Fan",
     citation: "Advanced Engineering Informatics, vol. 69, part C, article 103993, 2026",
     keywords: ["Generative Design", "Cultural Computing", "Semantic Representation"],
@@ -43,10 +43,10 @@ const publications = [
 
 const news = [
   {
-    date: "May 2026",
+    date: "Jun 2026",
     before: "Joined the ",
     highlight: "Center for Metaverse and Computational Creativity",
-    after: " at HKUST as a Research Assistant, advising by Prof. Pan Hui.",
+    after: " at HKUST as a Research Intern, advising by Prof. Pan Hui.",
   },
   {
     date: "Jan 2026",
@@ -66,52 +66,36 @@ const news = [
 
 const researchExperience = [
   {
-    period: "Jul 2026 - Present",
+    period: "Jun–Sep 2026",
+    place: "MC2, HKUST",
+    role: "Research Intern · advised by Prof. Pan Hui",
+    title: "Human-AI collaborative feedback system",
+    body: "Developed and evaluated an LLM-based feedback workflow for open-ended text revision. Under a unified evaluation schema, LLM-based evaluations were directionally aligned with human preference judgments. Manuscript under review.",
+    tags: ["Human-centered NLP", "Creative feedback", "LLM evaluation"],
+  },
+  {
+    period: "Jul–Sep 2026",
     place: "ARK Lab, HKUST",
     role: "Research Intern · advised by Prof. Xin Tong",
     title: "Cross-device multi-agent collaboration",
-    body: "Investigating how agents on heterogeneous devices can share task context, coordinate complementary capabilities, and maintain continuity across device transitions while preserving user control.",
+    body: "Developed and studied a cross-device multi-agent workflow for context sharing, capability coordination, and continuity across heterogeneous devices while preserving user control. Manuscript under review.",
     tags: ["Multi-agent systems", "Cross-device", "User control"],
   },
   {
-    period: "May 2026–Present",
-    place: "MC2, HKUST",
-    role: "Research Intern · advised by Prof. Pan Hui",
-    title: "Complementary LLM feedback selection for creative writing",
-    body: "Built a pipeline that selects a compact set of complementary reviewers under a fixed attention budget using observed feedback behavior rather than persona labels; evaluated alternative mechanisms and refined the method based on negative results.",
-    tags: ["Human-centered NLP", "Creative writing", "LLM evaluation"],
-  },
-  {
-    period: "Feb-Sep 2025",
+    period: "Feb–Sep 2025",
     place: "HCI Initiative, HKUST",
     role: "Research Intern · advised by Prof. Xiaojuan Ma",
-    title: "Co-creative scriptwriting through embodied role-play and reflection",
-    body: "Built a full-stack research prototype with multi-agent workflows and semantic retrieval. Led pilot and main studies, data processing, and quantitative analysis across 23 test iterations.",
-    tags: ["LLM agents", "User study", "Full-stack"],
+    title: "Experience-grounded feedback for screenplay reflection",
+    body: "Built a full-stack multi-agent system combining character role-play with reflective feedback for screenplay revision. A formative study with nine professional screenwriters informed the design; a user study with fourteen participants showed improved feedback quality and alignment, as well as greater effectiveness, depth, and richness of reflection. Published at CHI 2026.",
+    tags: ["Human-AI co-creation", "LLM agents", "User studies"],
   },
   {
     period: "Oct 2023–Feb 2025",
     place: "IABC Lab, Zhejiang University",
     role: "Graduate Researcher · advised by Prof. Chunlei Chai",
-    title: "Human-AI video production, parametric design, and model evolution",
-    body: "Developed multimodal video-production workflows, an automated Blender packaging pipeline, and an interactive genetic-algorithm prototype using Geometry Nodes and the Blender Python API.",
-    tags: ["Generative AI", "Blender", "Prototyping"],
-  },
-  {
-    period: "Dec 2023–Jun 2024",
-    place: "Future Design Lab, Zhejiang University",
-    role: "Research Intern",
-    title: "Fine-tuning workflows for apparel design",
-    body: "Curated garment datasets, evaluated generation quality, and compared virtual try-on, detail-preservation, and style-transfer methods.",
-    tags: ["Fine-tuning", "Evaluation", "Datasets"],
-  },
-  {
-    period: "May–Jul 2022",
-    place: "X-Reality Center, Northeastern University",
-    role: "Research Assistant · advised by Prof. Tianhan Gao",
-    title: "Multi-terminal virtual simulation teaching platform",
-    body: "Led web prototyping and interaction design for a cloud-rendered teaching platform used by universities.",
-    tags: ["React", "Interaction design", "XR"],
+    title: "Human-AI collaborative video production",
+    body: "Prototyped and iteratively tested a workflow that maps multimodal inputs to production-oriented video outputs; developed cinematic rule sets and prepared fine-tuning data.",
+    tags: ["Generative AI", "Video production", "Fine-tuning"],
   },
 ];
 
@@ -145,7 +129,7 @@ export default function Home() {
             <a href="https://scholar.google.com/citations?user=5ORGHRIAAAAJ&hl=zh-CN&oi=sra" target="_blank" rel="noreferrer"><span className="linkIcon" aria-hidden="true">G</span><span>Google Scholar</span></a>
             <a href="mailto:ceterminateniya@gmail.com"><span className="linkIcon" aria-hidden="true">@</span><span>Email</span></a>
             <a href="https://www.linkedin.com/in/xinyi-chen-9521b73b5/?isSelfProfile=true" target="_blank" rel="noreferrer"><span className="linkIcon" aria-hidden="true">in</span><span>LinkedIn</span></a>
-            <a href="./Xinyi_Chen_CV_20260904.pdf" download><span className="linkIcon" aria-hidden="true">▤</span><span>Curriculum Vitae</span></a>
+            <a href="./Xinyi_Chen_CV_20260915.pdf" download><span className="linkIcon" aria-hidden="true">▤</span><span>Curriculum Vitae</span></a>
           </nav>
         </aside>
         <div className="academicIntro">
@@ -259,20 +243,23 @@ export default function Home() {
           </div>
           <div className="backgroundColumn">
             <h3>Industry</h3>
-            <div className="detailItem"><span>2025–2026</span><strong>Kaon (previously FlowGPT)</strong><p>AI Technology Operations Intern</p></div>
-            <div className="detailItem"><span>2024</span><strong>Hangzhou Zaowu Technology</strong><p>Generative AI Engineer</p></div>
+            <div className="detailItem"><span>Nov 2025–May 2026</span><strong>Kaon (previously FlowGPT)</strong><p>AI Technology Operations Intern</p></div>
+            <div className="detailItem"><span>Apr–Nov 2024</span><strong>Hangzhou Zaowu Technology</strong><p>Generative AI Engineer</p></div>
           </div>
           <div className="backgroundColumn skillsColumn">
             <h3>Tools &amp; methods</h3>
             <div className="skillList">{[
-              "Python", "PyTorch", "TypeScript", "React", "LangChain", "Experimental design",
-              "Quantitative analysis", "User studies", "Figma", "Blender", "Unity 3D", "DreamBooth", "LoRA",
+              "Python", "PyTorch", "TensorFlow", "scikit-learn", "TypeScript", "React", "Next.js",
+              "FastAPI", "LangChain", "Semantic retrieval", "Prompt engineering", "Experimental design",
+              "Interviews", "Think-aloud", "Thematic analysis", "Quantitative analysis", "Figma",
+              "Blender", "C4D", "Unity 3D",
             ].map((skill) => <span key={skill}>{skill}</span>)}</div>
           </div>
         </div>
         <div className="awards">
           <h3>Awards(selected)</h3>
           <p><span>2024</span> Global Digital Intelligence Education Innovation Competition · Merit Award</p>
+          <p><span>2022</span> Northeastern University · First-Class Merit Scholarship and Outstanding Student</p>
           <p><span>2022</span> International Mathematical Contest in Modeling · Third Prize</p>
           <p><span>2021</span> China National Scholarship</p>
         </div>
