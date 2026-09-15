@@ -13,6 +13,9 @@ const description = "Research in human-AI collaboration, Human-Centered NLP, mul
 export const metadata: Metadata = {
   title,
   description,
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title,
     description,

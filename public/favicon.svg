@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cat icon">
+  <rect width="64" height="64" rx="16" fill="#dce5ff"/>
+  <path d="M17 28 13 14l14 8a25 25 0 0 1 10 0l14-8-4 14c3 4 5 8 5 13 0 11-9 18-20 18S12 52 12 41c0-5 2-9 5-13Z" fill="#1d42a6"/>
+  <path d="M22 38c2-2 5-2 7 0M35 38c2-2 5-2 7 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <path d="m29 45 3 2 3-2" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -43,7 +43,8 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(12px);
 }
-.wordmark { color: var(--oxford); font-size: 17px; font-weight: 750; letter-spacing: -.01em; }
+.wordmark { display: inline-flex; align-items: center; gap: 8px; color: var(--oxford); font-size: 17px; font-weight: 750; letter-spacing: -.01em; }
+.catMark { width: 23px; height: 23px; flex: 0 0 23px; }
 .navLinks { display: flex; gap: 28px; font-size: 12px; font-weight: 650; }
 .navLinks a { padding: 3px 0; }
 .navLinks a:hover { color: var(--blue); }
@@ -81,11 +82,12 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .artLast::after { content: ""; position: absolute; left: 2%; right: -3%; bottom: -7px; height: 8px; background: var(--yellow); border-radius: 50%; transform: rotate(-1.5deg); z-index: -1; }
 .artName i { position: absolute; right: -24px; top: -10px; color: var(--coral); font-size: 15px; font-style: normal; animation: nameSpark 6s linear infinite; }
 .role { margin: 13px 0 0; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .01em; }
-.aboutBlock { max-width: 730px; margin-top: 28px; }
+.academicIntro { min-width: 0; }
+.aboutBlock { width: 100%; max-width: 100%; margin-top: 28px; }
 .aboutBlock + .aboutBlock { margin-top: 25px; }
 .introText { margin: 0; font-size: 15px; line-height: 1.68; text-align: left; text-wrap: pretty; }
-.researchBlock { display: grid; gap: 15px; padding: 24px 26px; background: var(--yellow); border: 0; border-radius: 10px; box-shadow: 7px 7px 0 var(--blue); }
-.availability { max-width: 690px; margin: 20px 0 0; color: var(--blue); font-size: 12px; font-weight: 700; }
+.researchBlock { display: grid; gap: 15px; padding: 24px 26px; overflow: hidden; background: var(--yellow); border: 1px solid rgba(29, 66, 166, .09); border-radius: 10px; box-shadow: 0 10px 24px rgba(0, 33, 71, .12); }
+.availability { max-width: 690px; margin: 34px 0 0; color: var(--blue); font-size: 12px; font-weight: 700; }
 .affiliation { margin: 22px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .academicAside { padding-top: 4px; }
 .profilePhoto { position: relative; width: 210px; margin: 0; padding: 9px; background: white; border: 0; border-radius: 10px; box-shadow: 7px 7px 0 var(--yellow); transform: none; }

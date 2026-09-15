@@ -124,7 +124,10 @@ export default function Home() {
   return (
     <main>
       <nav className="nav" aria-label="Main navigation">
-        <a className="wordmark" href="#about">Xinyi Chen</a>
+        <a className="wordmark" href="#about">
+          <img className="catMark" src="./favicon.svg" alt="" aria-hidden="true" />
+          <span>Xinyi Chen</span>
+        </a>
         <div className="navLinks">
           <a href="#about">About</a>
           <a href="#news">News</a>
