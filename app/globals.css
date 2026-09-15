@@ -9,7 +9,7 @@
   --blue: #1d42a6;
   --coral: #4169e1;
   --yellow: #dce5ff;
-  --about-card-bg: #dce5ff;
+  --about-card-bg: #d2dffc;
   --about-card-shadow: #1d42a6;
   --cyan: #b9d6f2;
   --line: #dce3ec;
@@ -83,14 +83,15 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .artLast { position: relative; z-index: 0; color: var(--blue); font-family: var(--font-inter), Inter, sans-serif; font-weight: 760; letter-spacing: -.025em; }
 .artLast::after { content: ""; position: absolute; left: 2%; right: -3%; bottom: -7px; height: 8px; background: var(--yellow); border-radius: 50%; transform: rotate(-1.5deg); z-index: -1; }
 .artName i { position: absolute; right: -24px; top: -10px; color: var(--coral); font-size: 15px; font-style: normal; animation: nameSpark 6s linear infinite; }
-.role { margin: 13px 0 0; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .01em; }
+.role { margin: 20px 0 0 0; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .01em; }
 .academicIntro { min-width: 0; }
-.aboutBlock { width: 95%; max-width: 95%; margin-top: 28px; margin-left: 10px; }
+.aboutBlock { width: 95%; max-width: 95%; margin-top: 20px; margin-left: 10px; }
 .aboutBlock + .aboutBlock { margin-top: 22px; }
 .introText {
   margin: 0;
   font-size: 15px;
-  line-height: 1.68;
+  font-weight: 450;
+  line-height: 1.65;
   text-align: left;
   text-wrap: wrap;
   word-spacing: normal;

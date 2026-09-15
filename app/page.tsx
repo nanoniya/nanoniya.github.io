@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Xinyi Chen — Human-AI Interaction Researcher",
+  title: "Xinyi Chen — HCI Researcher",
   description:
     "Xinyi Chen studies human-AI collaboration, human-centered NLP, multi-agent systems, and creativity support.",
 };
