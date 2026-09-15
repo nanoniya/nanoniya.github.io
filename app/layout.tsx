@@ -14,7 +14,14 @@ export const metadata: Metadata = {
   title,
   description,
   icons: {
-    icon: "/paw.png",
+    icon: [
+      { url: "/paw-favicon.png?v=2", type: "image/png", sizes: "32x32" },
+      { url: "/paw.png?v=2", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/paw-favicon.png?v=2",
+    apple: [
+      { url: "/apple-touch-icon.png?v=2", type: "image/png", sizes: "180x180" },
+    ],
   },
   openGraph: {
     title,
