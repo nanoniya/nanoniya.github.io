@@ -155,33 +155,31 @@ export default function Home() {
           <div className="aboutBlock">
             <p className="introText">
               I am a master&apos;s student at Zhejiang University, advised by Prof. Chunlei Chai.
-              I am currently a research intern at the AI &amp; Art for Knowledge &amp; Creativity
-              (ARK) Lab and a research assistant at the Center for Metaverse and Computational
-              Creativity (MC2) at HKUST, working with Prof. Xin Tong and Prof. Pan Hui.
+              I am currently a research intern at the Center for Metaverse and Computational
+              Creativity at HKUST (GZ), working with Prof. Pan Hui.
               Previously, I worked with Prof. Xiaojuan Ma at the HCI Initiative, HKUST.
             </p>
           </div>
           <div className="aboutBlock researchBlock">
             <p className="introText">
-              My research asks how generative and agentic AI systems can coordinate diverse
-              perspectives and capabilities while keeping people meaningfully involved in
-              reasoning and creative decisions. I approach this question through three connected directions:
+              My research interests center on AI-supported creative thinking, particularly how
+              interactive systems can help people develop ideas through feedback, reflection,
+              and revision.
             </p>
-            <ul className="researchPoints">
-              <li><strong>Reflective human-AI co-creation.</strong> I design role-based and experience-grounded interactions that help people examine alternatives instead of simply accepting AI output, as explored in DuoDrama for screenplay refinement.</li>
-              <li><strong>Agent coordination and feedback selection.</strong> My current work investigates complementary LLM reviewers under limited human attention and multi-agent collaboration across heterogeneous devices.</li>
-              <li><strong>Human-centered generative design.</strong> I explore semantic representations, multimodal workflows, and parametric systems that make AI-supported creative processes more controllable and aligned with human intent.</li>
-            </ul>
-          </div>
-          <div className="aboutBlock futureBlock">
             <p className="introText">
-              Across these projects, I combine interactive system building, agent workflow design,
-              and empirical user studies. Looking forward, I aim to develop principles and systems
-              for reflective, steerable, and context-aware human-AI collaboration—especially where
-              language models mediate creative reasoning, feedback, and coordination.
+              I am interested in designing interactions that help creators consider different
+              perspectives, articulate their intentions, and decide how to move their work forward.
+              A central question for me is how AI can expand creative possibilities while leaving
+              room for creators to exercise and develop their own judgment.
             </p>
-            <p className="availability">I am seeking PhD opportunities in HCI, Human-Centered NLP, and Human-Centered AI.</p>
+            <p className="introText">
+              Alongside system design, I am interested in evaluation methods that capture what
+              makes AI assistance useful in creative work. I aim to develop metrics and benchmarks
+              that account for creators&apos; goals and stages of the creative process, and investigate
+              how these assessments relate to people&apos;s experiences and decisions.
+            </p>
           </div>
+          <p className="availability">I am seeking PhD opportunities in HCI and Human-Centered NLP.</p>
         </div>
       </section>
 

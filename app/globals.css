@@ -83,11 +83,8 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .role { margin: 13px 0 0; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .01em; }
 .aboutBlock { max-width: 730px; margin-top: 28px; }
 .aboutBlock + .aboutBlock { margin-top: 25px; }
-.introText { margin: 0; font-size: 15px; line-height: 1.68; }
-.researchBlock { padding: 22px 24px; background: var(--yellow); border: 0px solid var(--ink); border-radius: 10px; box-shadow: 7px 7px 0 var(--blue); }
-.researchPoints { display: grid; gap: 11px; margin: 17px 0 0; padding-left: 18px; color: var(--muted); font-size: 12px; line-height: 1.6; }
-.researchPoints li::marker { color: var(--blue); }
-.researchPoints strong { color: var(--ink); }
+.introText { margin: 0; font-size: 15px; line-height: 1.68; text-align: left; text-wrap: pretty; }
+.researchBlock { display: grid; gap: 15px; padding: 24px 26px; background: var(--yellow); border: 0; border-radius: 10px; box-shadow: 7px 7px 0 var(--blue); }
 .availability { max-width: 690px; margin: 20px 0 0; color: var(--blue); font-size: 12px; font-weight: 700; }
 .affiliation { margin: 22px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .academicAside { padding-top: 4px; }
