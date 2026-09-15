@@ -76,7 +76,7 @@ const researchExperience = [
   {
     period: "May 2026–Present",
     place: "MC2, HKUST",
-    role: "Research Assistant · advised by Prof. Pan Hui",
+    role: "Research Intern · advised by Prof. Pan Hui",
     title: "Complementary LLM feedback selection for creative writing",
     body: "Built a pipeline that selects a compact set of complementary reviewers under a fixed attention budget using observed feedback behavior rather than persona labels; evaluated alternative mechanisms and refined the method based on negative results.",
     tags: ["Human-centered NLP", "Creative writing", "LLM evaluation"],

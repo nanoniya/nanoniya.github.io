@@ -11,7 +11,7 @@
   --yellow: #dce5ff;
   --cyan: #b9d6f2;
   --line: #dce3ec;
-  --content-indent: 112px;
+  --content-indent: 100px;
 }
 
 * { box-sizing: border-box; }
@@ -101,7 +101,7 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .academicSection {
   width: min(1080px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 92px 0;
+  padding: 90px 0 0px 0;
   border-bottom: 1px solid var(--line);
 }
 #news, #publications, #experience, .backgroundSection { width: min(1080px, calc(100% - 48px)); background: transparent; color: var(--ink); border: 0; border-radius: 0; box-shadow: none; clip-path: none; }
