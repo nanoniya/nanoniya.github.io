@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -8,30 +7,23 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-  const requestHeaders = await headers();
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "localhost:3000";
-  const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
-  const origin = `${protocol}://${host}`;
-  const title = "Xinyi Chen — Human-AI Interaction Researcher";
-  const description = "Research in human-AI collaboration, Human-Centered NLP, multi-agent systems, and creativity support.";
+const title = "Xinyi Chen — Human-AI Interaction Researcher";
+const description = "Research in human-AI collaboration, Human-Centered NLP, multi-agent systems, and creativity support.";
 
-  return {
+export const metadata: Metadata = {
+  title,
+  description,
+  openGraph: {
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      url: origin,
-    },
-    twitter: {
-      card: "summary",
-      title,
-      description,
-    },
-  };
-}
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+  },
+};
 
 export default function RootLayout({
   children,

@@ -136,13 +136,13 @@ export default function Home() {
       <section className="academicHero" id="about">
         <aside className="academicAside">
           <figure className="profilePhoto">
-            <img src="/profile.jpg" alt="Xinyi Chen holding a cat" />
+            <img src="./profile.jpg" alt="Xinyi Chen holding a cat" />
           </figure>
           <nav className="profileLinks" aria-label="Profile links">
             <a href="https://scholar.google.com/citations?user=5ORGHRIAAAAJ&hl=zh-CN&oi=sra" target="_blank" rel="noreferrer"><span className="linkIcon" aria-hidden="true">G</span><span>Google Scholar</span></a>
             <a href="mailto:ceterminateniya@gmail.com"><span className="linkIcon" aria-hidden="true">@</span><span>Email</span></a>
             <a href="https://www.linkedin.com/in/xinyi-chen-9521b73b5/?isSelfProfile=true" target="_blank" rel="noreferrer"><span className="linkIcon" aria-hidden="true">in</span><span>LinkedIn</span></a>
-            <a href="/Xinyi_Chen_CV_20260904.pdf" download><span className="linkIcon" aria-hidden="true">▤</span><span>Curriculum Vitae</span></a>
+            <a href="./Xinyi_Chen_CV_20260904.pdf" download><span className="linkIcon" aria-hidden="true">▤</span><span>Curriculum Vitae</span></a>
           </nav>
         </aside>
         <div className="academicIntro">
