@@ -1,6 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cat icon">
-  <rect width="64" height="64" rx="16" fill="#dce5ff"/>
-  <path d="M17 28 13 14l14 8a25 25 0 0 1 10 0l14-8-4 14c3 4 5 8 5 13 0 11-9 18-20 18S12 52 12 41c0-5 2-9 5-13Z" fill="#1d42a6"/>
-  <path d="M22 38c2-2 5-2 7 0M35 38c2-2 5-2 7 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-  <path d="m29 45 3 2 3-2" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cute cat icon">
+  <rect width="64" height="64" rx="17" fill="#2249b9"/>
+  <path d="M17 29 14 14l13 8a27 27 0 0 1 10 0l13-8-3 15c3 4 5 8 5 13 0 10-9 17-20 17S12 52 12 42c0-5 2-9 5-13Z" fill="#f8fafc"/>
+  <path d="m18 20 7 5-6 3Zm28 0-7 5 6 3Z" fill="#a9c5ff"/>
+  <path d="M22 39c2-2 5-2 7 0M35 39c2-2 5-2 7 0" fill="none" stroke="#002147" stroke-width="3" stroke-linecap="round"/>
+  <path d="m29 46 3 2 3-2" fill="none" stroke="#002147" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="19" cy="45" r="2.5" fill="#dce5ff"/>
+  <circle cx="45" cy="45" r="2.5" fill="#dce5ff"/>
 </svg>
